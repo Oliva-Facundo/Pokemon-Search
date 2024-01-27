@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokémon Search</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <h1>Pokémon Search</h1>
-        <div>
-            <div>
-                <h2>Search for Pokémon Name or ID:</h2>
-                <div>
-                    <input type="text" id="search-input">
-                    <button>Search</button>
-                </div>
-            </div>
-            <div>
-                <p><span id="pokemon-name"></span><span id="pokemon-id"></span></p>
-                <p>Weight:<span id="weight"></span> Height: <span id="height"></span></p>
-                <div id="image"></div>
-                <div id="types"></div>
-            </div>
-            <div>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Base</th>
-                            <th>Stats</th>
-                        </tr>
-                        <tr>
-                            <th>HP:</th>
-                            <th id="hp"></th>
-                        </tr>
-                        <tr>
-                            <th>Attack:</th>
-                            <th id="attack"></th>
-                        </tr>
-                        <tr>
-                            <th>Defence:</th>
-                            <th id="defence"></th>
-                        </tr>
-                        <tr>
-                            <th>Sp. Attack</th>
-                            <th id="special-attack"></th>
-                        </tr>
-                        <tr>
-                            <th>Sp. Defence:</th>
-                            <th id="special-defence"></th>
-                        </tr>
-                        <tr>
-                            <th>Speed</th>
-                            <th id="speed"></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <h1>Pokémon Search</h1>
+      <div class="container">
+        <div class="input-box">
+          <h2>Search for Pokémon Name or ID:</h2>
+          <div class="input">
+            <input type="text" id="search-input" required />
+            <button id="search-button">Search</button>
+          </div>
         </div>
+        <div class="show-pokemon">
+          <p><span id="pokemon-name"></span> <span id="pokemon-id"></span></p>
+          <p><span id="weight"></span><span id="height"></span></p>
+          <div id="image"></div>
+          <div id="types"></div>
+        </div>
+        <div class="table-box">
+          <table>
+            <tbody>
+              <tr>
+                <th>Base</th>
+                <th>Stats</th>
+              </tr>
+              <tr>
+                <th>HP:</th>
+                <th id="hp"></th>
+              </tr>
+              <tr>
+                <th>Attack:</th>
+                <th id="attack"></th>
+              </tr>
+              <tr>
+                <th>Defense:</th>
+                <th id="defense"></th>
+              </tr>
+              <tr>
+                <th>Sp. Attack</th>
+                <th id="special-attack"></th>
+              </tr>
+              <tr>
+                <th>Sp. Defense:</th>
+                <th id="special-defense"></th>
+              </tr>
+              <tr>
+                <th>Speed</th>
+                <th id="speed"></th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
