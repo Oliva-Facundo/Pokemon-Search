@@ -28,7 +28,6 @@ const getPokemon = (nameOrId) => {
 };
 
 const getPokemonStats = (arr) => {
-  console.log(arr);
   pokemonName.textContent = arr.name.toUpperCase();
   pokemonId.textContent = "#" + arr.id;
   weight.textContent = "Weight: " + arr.weight + ". ";
